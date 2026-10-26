@@ -3,18 +3,18 @@ class AnotherAgentic < Formula
   homepage "https://github.com/vymalo/another-agentic-system"
   depends_on :linux
   on_intel do
-    url "https://github.com/vymalo/another-agentic-system/releases/download/v0.6.0/another-agentic_0.6.0_linux_x64.AppImage", using: :nounzip
-    sha256 "30d60af3dc46268b0047d1fee4ce9e6256cd84ec1e04720134da5cef8a433e3e"
+    url "https://github.com/vymalo/another-agentic-system/releases/download/v0.7.1/another-agentic_0.7.1_linux_x64.AppImage", using: :nounzip
+    sha256 "901bd9601020827ce208f406a547b401f0c3f077c8920431116e4aa72666bd8f"
   end
 
   on_arm do
-    url "https://github.com/vymalo/another-agentic-system/releases/download/v0.6.0/another-agentic_0.6.0_linux_arm64.AppImage", using: :nounzip
-    sha256 "97011c5d7b8dee9ae46e683abbabd45464a0c5be62c09e3affb9b0b95e2c7a19"
+    url "https://github.com/vymalo/another-agentic-system/releases/download/v0.7.1/another-agentic_0.7.1_linux_arm64.AppImage", using: :nounzip
+    sha256 "f2828874d235f72114fe3cc578c993ccb58bf782dc038091da264e9331fd1805"
   end
   license any_of: ["MIT", "Apache-2.0"]
 
   def install
-    bin.install Dir["another-agentic_0.6.0_linux_*.AppImage"].first => "another-agentic"
+    bin.install Dir["another-agentic_0.7.1_linux_*.AppImage"].first => "another-agentic"
     chmod 0755, bin/"another-agentic"
   end
 end
