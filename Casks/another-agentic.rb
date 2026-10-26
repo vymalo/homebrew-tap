@@ -1,14 +1,14 @@
 cask "another-agentic" do
-  version "0.6.0"
+  version "0.7.1"
 
   on_arm do
-    url "https://github.com/vymalo/another-agentic-system/releases/download/v0.6.0/another-agentic_0.6.0_macos_arm64.dmg"
-    sha256 "16154eff307244001405484a60beb5dd9728c5ce072985b9b54ff8273515469d"
+    url "https://github.com/vymalo/another-agentic-system/releases/download/v0.7.1/another-agentic_0.7.1_macos_arm64.dmg"
+    sha256 "fa17f9a81c396cae94af845c874021f540880295bf9131a6b60e25b749fe7439"
   end
 
   on_intel do
-    url "https://github.com/vymalo/another-agentic-system/releases/download/v0.6.0/another-agentic_0.6.0_macos_x64.dmg"
-    sha256 "9842a2f8de280b54a85ec7d7a63f74bf09b1ac250af1add947fe9034bf0bd5a2"
+    url "https://github.com/vymalo/another-agentic-system/releases/download/v0.7.1/another-agentic_0.7.1_macos_x64.dmg"
+    sha256 "942c12dd1c0156fa4c77da1ddc64edb71cd5969712e951ce1a5f959739dd9246"
   end
 
   name "another-agentic"
