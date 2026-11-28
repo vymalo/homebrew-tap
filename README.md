@@ -1,7 +1,7 @@
 # Vymalo Homebrew tap
 
 Install the [another-agentic desktop app](https://github.com/vymalo/another-agentic-system) with [Homebrew](https://brew.sh/).
-The tap provides a macOS Cask and a Linux AppImage Formula, each for arm64 and x86_64. Windows is not distributed.
+The tap provides a macOS Cask and a Linux AppImage Formula, each for arm64 and x86_64, and [command-line tools](#command-line-tools). Windows is not distributed.
 
 ## Install and launch
 
@@ -26,13 +26,23 @@ The GitHub repository is named `homebrew-tap`, but its Homebrew name is `vymalo/
 
 The app connects to the deployment it was built for; it does not start a local server. See the [app documentation](https://github.com/vymalo/another-agentic-system/blob/main/apps/tauri/README.md) for deployment and sign-in details.
 
+## Command-line tools
+
+Command-line programs for Linux and macOS, arm64 and x86_64, from [GitHub Releases](https://github.com/vymalo/another-adam-rs/releases). `brew install` names the formula; the SHA-256 of each download is in the formula.
+
+<!-- cli-packages:begin -->
+| Formula | Install | What it is |
+|---|---|---|
+| adam-agent | `brew install vymalo/tap/adam-agent` | Serve an agent folder over A2A: one binary, SQLite on a laptop; [another-adam-rs](https://github.com/vymalo/another-adam-rs) |
+<!-- cli-packages:end -->
+
 ## Upgrade
 
 ```sh
 brew update
 ```
 
-Then upgrade only this app:
+Then upgrade one package. A command-line tool: `brew upgrade vymalo/tap/adam-agent`. The desktop app:
 
 ```sh
 # macOS
@@ -46,7 +56,7 @@ The tap's recipes determine the available version. Downloads come from [GitHub R
 
 ## Uninstall
 
-Run the command for your platform:
+A command-line tool: `brew uninstall vymalo/tap/adam-agent`. The desktop app, for your platform:
 
 ```sh
 # macOS
